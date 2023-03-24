@@ -48,13 +48,6 @@ async function getWeather(city){
 
 }
 
-window.addEventListener('load', () =>{
-  const town = localStorage.getItem(`City`);
-    if (town){
-      getWeather(city);
-    }
-});
-
 function displayWeather(){
 const city = (inputeInfo.value).trim();
 result.innerHTML = '';
